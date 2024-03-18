@@ -1,0 +1,13 @@
+.TeamNav{
+    display: flex;
+    justify-content:space-around;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-weight: bolder;
+    
+}
+.TeamNav p {
+    color: black;
+   
+}

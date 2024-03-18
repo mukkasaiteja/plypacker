@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { useData } from './Components/context/Mycontext';
+import Admin from './Pages/Admin';
+
+import Register from './Pages/Register';
+import TeamPage from './Pages/TeamPage';
 
 function App() {
+const {radio,state,open}=useData()
+  const renderComponent = () => {
+    switch (radio) {
+      case "admin":
+        return <Admin />;
+      case "member":
+        return <TeamPage/>;
+      default:
+        return null;
+    }
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {
+         state&&<Register/> 
+      }
+   
+
+     {
+         open&& renderComponent()
+     }
     </div>
   );
 }

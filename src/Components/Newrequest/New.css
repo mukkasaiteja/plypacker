@@ -1,0 +1,38 @@
+
+input[type="file"]{
+    border: 1px solid white;
+   padding: 50px;
+   
+   }
+   .team-main{
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       height: 400px;
+       margin-top: 100px;
+   
+   }
+   .Product-details{
+    padding: 10px;
+       width: 400px;
+       height: 50px;
+       margin-top: 30px;
+       outline: none;
+   }
+   .Team-button{
+       background-color: blueviolet;
+       color: white;
+       margin-left: 40%;
+       padding: 20px;
+       border-radius: 5px;
+   }
+   
+   .Team-h1{
+       text-align: center;
+       color: blueviolet;
+   }
+   .description{
+    width: 400px;
+    padding: 10px;
+    margin-top: 30px;
+   }
